@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hank 的技术博客</title>
+    <link>https://example.com</link>
+    <description>一个关于前端、可视化与工程化折腾记录的个人技术博客。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 07 Nov 2026 18:49:24 GMT</lastBuildDate>
+    <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vue 3 里做一套能维护的动效系统</title>
+      <link>https://example.com/blog/vue-effect-system</link>
+      <guid isPermaLink="true">https://example.com/blog/vue-effect-system</guid>
+      <pubDate>Fri, 06 Nov 2026 01:00:00 GMT</pubDate>
+      <description>声明式和命令式分开、观察者只建一个、卸载清单固定三条 —— 把散落在二十个组件里的动效收成一层。</description>
+      <category>技术分享</category>
+      <category>Vue3</category>
+      <category>GSAP</category>
+      <category>架构</category>
+    </item>
+    <item>
+      <title>Three.js 场景的第一帧:把首屏压进 1.5 秒</title>
+      <link>https://example.com/blog/three-first-frame</link>
+      <guid isPermaLink="true">https://example.com/blog/three-first-frame</guid>
+      <pubDate>Wed, 04 Nov 2026 01:00:00 GMT</pubDate>
+      <description>首屏慢的原因分三段:资源、解析上传、着色器编译。多数人只优化第一段,而第三段最容易被忽略。</description>
+      <category>前端可视化</category>
+      <category>Three.js</category>
+      <category>WebGL</category>
+      <category>性能</category>
+    </item>
+    <item>
+      <title>一次 WebGL 内存泄漏的排查记录</title>
+      <link>https://example.com/blog/webgl-memory-leak</link>
+      <guid isPermaLink="true">https://example.com/blog/webgl-memory-leak</guid>
+      <pubDate>Sat, 31 Oct 2026 01:00:00 GMT</pubDate>
+      <description>切换房间二十次后 GPU 进程崩溃。三次排查、一张监控表,把偶发崩溃变成可以盯着看的数字。</description>
+      <category>踩坑记录</category>
+      <category>WebGL</category>
+      <category>性能</category>
+      <category>DevTools</category>
+    </item>
+    <item>
+      <title>SSE 还是 WebSocket:实时看板的数据通道取舍</title>
+      <link>https://example.com/blog/sse-vs-websocket</link>
+      <guid isPermaLink="true">https://example.com/blog/sse-vs-websocket</guid>
+      <pubDate>Wed, 28 Oct 2026 01:00:00 GMT</pubDate>
+      <description>数据流是单向的,就没必要用双向协议。换掉之后少了两百行重连逻辑,也少了运维的一堆配置。</description>
+      <category>工程化</category>
+      <category>SSE</category>
+      <category>WebSocket</category>
+      <category>Vue3</category>
+    </item>
+    <item>
+      <title>用 Canvas 画一张会呼吸的点阵背景</title>
+      <link>https://example.com/blog/canvas-dot-field</link>
+      <guid isPermaLink="true">https://example.com/blog/canvas-dot-field</guid>
+      <pubDate>Sat, 24 Oct 2026 01:00:00 GMT</pubDate>
+      <description>CSS 版和 Canvas 版的取舍、鼠标位置为什么要缓动、以及一个反直觉的优化:不动就不重绘。</description>
+      <category>前端可视化</category>
+      <category>Canvas</category>
+      <category>动效</category>
+    </item>
+    <item>
+      <title>三年 Tailwind,最后只留下 12 个自定义类</title>
+      <link>https://example.com/blog/tailwind-kept-12</link>
+      <guid isPermaLink="true">https://example.com/blog/tailwind-kept-12</guid>
+      <pubDate>Wed, 21 Oct 2026 01:00:00 GMT</pubDate>
+      <description>自定义类膨胀的根因不是「抽类」,是没有边界。这是活下来的 12 个,和删掉它们的理由。</description>
+      <category>技术分享</category>
+      <category>CSS</category>
+      <category>Tailwind</category>
+      <category>设计系统</category>
+    </item>
+    <item>
+      <title>Vite 构建慢?先把这几个指标量出来</title>
+      <link>https://example.com/blog/vite-build-profile</link>
+      <guid isPermaLink="true">https://example.com/blog/vite-build-profile</guid>
+      <pubDate>Fri, 16 Oct 2026 01:00:00 GMT</pubDate>
+      <description>冷启动、HMR、生产构建是三件事。混在一起谈,就会去优化错误的地方。附一份最终配置。</description>
+      <category>工程化</category>
+      <category>Vite</category>
+      <category>性能</category>
+      <category>构建</category>
+    </item>
+    <item>
+      <title>给前端项目加一层「能跑起来」的 CI</title>
+      <link>https://example.com/blog/ci-that-runs</link>
+      <guid isPermaLink="true">https://example.com/blog/ci-that-runs</guid>
+      <pubDate>Mon, 12 Oct 2026 01:00:00 GMT</pubDate>
+      <description>最小可用版本只做三件事,四十秒跑完。但一定要开启「必需检查」,否则红色只是装饰品。</description>
+      <category>工程化</category>
+      <category>CI</category>
+      <category>GitHub Actions</category>
+      <category>规范</category>
+    </item>
+    <item>
+      <title>结构化写作:让技术文档长得像产品</title>
+      <link>https://example.com/blog/writing-like-product</link>
+      <guid isPermaLink="true">https://example.com/blog/writing-like-product</guid>
+      <pubDate>Wed, 07 Oct 2026 01:00:00 GMT</pubDate>
+      <description>结论、条件、细节,读者的耐心只有三层。附一张我写完必过的检查清单。</description>
+      <category>杂谈随笔</category>
+      <category>写作</category>
+      <category>文档</category>
+    </item>
+    <item>
+      <title>我把后台管理系统重写了一遍,然后后悔了三天</title>
+      <link>https://example.com/blog/rewrite-admin-regret</link>
+      <guid isPermaLink="true">https://example.com/blog/rewrite-admin-regret</guid>
+      <pubDate>Fri, 02 Oct 2026 01:00:00 GMT</pubDate>
+      <description>四个月、三个人、上线两周四十一个 bug。四个月后我承认:80% 的痛点,两周局部改造就能解决。</description>
+      <category>杂谈随笔</category>
+      <category>工程</category>
+      <category>反思</category>
+    </item>
+    <item>
+      <title>ECharts 大屏的六个坑,和三个必做项</title>
+      <link>https://example.com/blog/echarts-dashboards</link>
+      <guid isPermaLink="true">https://example.com/blog/echarts-dashboards</guid>
+      <pubDate>Thu, 18 Dec 2025 01:00:00 GMT</pubDate>
+      <description>高亮不会自动取消、缩放会糊、容器尺寸变化不触发 resize —— 以及为什么要跑一次 24 小时。</description>
+      <category>前端可视化</category>
+      <category>ECharts</category>
+      <category>Vue3</category>
+      <category>性能</category>
+    </item>
+    <item>
+      <title>断网三天,我做了个离线优先的笔记应用</title>
+      <link>https://example.com/blog/offline-first-notes</link>
+      <guid isPermaLink="true">https://example.com/blog/offline-first-notes</guid>
+      <pubDate>Mon, 22 Sep 2025 01:00:00 GMT</pubDate>
+      <description>本地是事实来源,服务器只是副本。这套思路写下来,同步逻辑只用 240 行。</description>
+      <category>杂谈随笔</category>
+      <category>PWA</category>
+      <category>IndexedDB</category>
+    </item>
+  </channel>
+</rss>

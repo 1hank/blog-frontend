@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hank 的技术博客</title>
+    <meta
+      name="description"
+      content="一个关于前端、可视化与工程化折腾记录的个人技术博客。"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hank 的技术博客" />
+    <meta property="og:description" content="写代码,也写清楚为什么。" />
+
+    <!-- 尽早打上主题与 js 标记,避免首屏闪烁 / FOUC -->
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add("js");
+        try {
+          // 与参考站一致: 默认白底, 不跟随系统深色偏好; 只有手动切过才记住。
+          // ?theme=dark|light 可强制指定(方便分享 / 调试)。
+          var forced = /[?&]theme=(dark|light)/.exec(location.search);
+          var saved = localStorage.getItem("blog-theme");
+          var fallback = saved === "dark" || saved === "light" ? saved : "light";
+          d.dataset.theme = forced ? forced[1] : fallback;
+        } catch (e) {
+          d.dataset.theme = "light";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
