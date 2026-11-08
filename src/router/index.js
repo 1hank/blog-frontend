@@ -41,8 +41,9 @@ const routes = [
   },
 ];
 
+// GitHub Pages 部署在 /blog-frontend/ 子路径下, base 必须与 vite.config.js 的 base 一致
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 
